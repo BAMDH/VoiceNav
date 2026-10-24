@@ -1,0 +1,45 @@
+{
+  "sample_rate": 16000,
+  "clip_samples": 16000,
+  "n_fft": 512,
+  "win_length": 400,
+  "hop": 160,
+  "n_mels": 64,
+  "n_frames": 101,
+  "log_eps": 1e-06,
+  "f_min": 20.0,
+  "f_max": 8000.0,
+  "mel_scale": "htk",
+  "power": 2,
+  "image": {
+    "minmax": true,
+    "quantize": "round",
+    "flip_vertical": true,
+    "scale": 0.00392156862745098,
+    "mean": 0.3237491951165731,
+    "std": 0.2364222802840302
+  },
+  "mean_std_in_graph": true,
+  "input_name": "input",
+  "output_name": "logits",
+  "input_shape": [
+    1,
+    1,
+    64,
+    101
+  ],
+  "classes": [
+    "yes",
+    "no",
+    "up",
+    "down",
+    "left",
+    "right",
+    "on",
+    "off",
+    "stop",
+    "go"
+  ],
+  "min_confidence": 0.9,
+  "parity_tol": 0.05
+}

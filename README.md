@@ -1,2 +1,4 @@
 # VoiceNav
 Android application for real-time voice command recognition using a deep learning model trained with PyTorch and deployed with ONNX Runtime. Implements audio preprocessing, Mel-spectrogram feature extraction, command classification, and voice-driven navigation, with automated tests for model inference and navigation logic.
+
+Two distinct model architectures/configurations were experimentally evaluated using the Speech Commands Dataset v0.02, comparing baseline training against data-augmented training. The models were assessed using validation metrics, including accuracy, macro F1-score, and loss, to identify the best-performing configuration. The selected model was then exported to ONNX format, validated for inference compatibility, and integrated into the Android application for real-time voice command recognition.
